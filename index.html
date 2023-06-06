@@ -1,68 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="google-site-verification" content="OWoK4rHiwUsUNbVS2vw8qhHCmuF0sNXDakMlk47jvnQ" />
-    <title>portfolio</title>
-  </head>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <body>
-    <nav>
-      <!-- container -->
-      <div>
-        <!-- logo -->
-        <div class="">
-          <h1>My Portfolio</h1>
-        </div>
-        <!-- menu -->
-        <div>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#aboutme">About me</a></li>
-            <li><a href="#project">Project</a></li>
-            <li><a href="#contactme">Contact Me</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="google-site-verification" content="OWoK4rHiwUsUNbVS2vw8qhHCmuF0sNXDakMlk47jvnQ" />
+  <title>portfolio</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: monospace;
+      padding: 20px;
+      margin: 0;
+    }
 
-    <section id="home">
-      <!-- container -->
-      <div>
-        <!-- logo -->
-        <div>
-          <h1>Hello World!</h1>
-          <h2>
-            My Name is
-          </h2>
-          <h2>
-            KHOIRUDDOA
-          </h2>
-          <h3>I am a Web Programmer</h3>
-          <h4>as a Fullstack Developer</h4>
-        </div>
-        
-      </div>
-    </section>
+    h1, h2, h3, h4, p, a {
+      margin: 0;
+    }
 
-    <section id="aboutme">
-      <!-- container -->
+    nav {
+      margin-bottom: 20px;
+    }
+
+    nav div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h1 {
+      font-size: 24px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    section h1 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    section h2 {
+      font-size: 14px;
+      font-weight: bold;
+      color: #00ADB5;
+    }
+
+    section p {
+      margin-bottom: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #fff;
+    }
+
+    th {
+      font-weight: bold;
+    }
+
+    tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    a {
+      color: #00ADB5;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div>
       <div>
-        
-        
-          <div>
-            <h1>
-              About me:
-            </h1>
-          </div>
-            <div>
-              <h2 class="text-[40px] font-[700] text-[#00ADB5]">KHOIRUDDOA</h2>
-            </div>
-            <div>
-              <p>
-                Bachelor Degree of System Information
+        <h1>My Portfolio</h1>
+      </div>
+      <div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#aboutme">About me</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#contactme">Contact Me</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home">
+    <div>
+      <div>
+        <h1>Hello World!</h1>
+        <h2>My Name is</h2>
+        <h2>KHOIRUDDOA</h2>
+        <h3>I am a Web Programmer</h3>
+        <h4>as a Fullstack Developer</h4>
+        <h4>Stack : PHP, Javascript, Laravel, Express JS</h4>
+
+
+      </div>
+    </div>
+  </section>
+
+  <section id="aboutme">
+    <div>
+      <div>
+        <h1>About me:</h1>
+      </div>
+      <div>
+        <h2>KHOIRUDDOA</h2>
+      </div>
+      <div>
+        <p>Bachelor Degree of System Information
               </p>
             </div>
             <div>
@@ -74,6 +146,9 @@
            </p>
            </div>
            </div>
+
+        <h5><span>I started my career as a production operator at PT. Rinnai Indonesia and continued the same job at PT. Kwarsa Indah Murni.<br> While working at PT Kwarsa Indah Murni, I decided to pursue my education at STMIK Insan Pembangunan, majoring in Information Systems, while still working.<br> Later on, I decided to seek new challenges at PT. Putra Naga Indotama as a production admin.<br>After graduating from college, in order to further develop my career in the field of technology,<br> I decided to join a bootcamp at Alkademi Bandung and deepen my skills in web programming. <br>Now, I truly enjoy my career in this field and continue to strive for professional growth. and Currently, I am learning Go (Golang).</span>
+        </h5>
     </section>
 
     <section id="project">
@@ -88,11 +163,35 @@
                   </th>
                   <th>Stack</th>
                   <th>
-                    Github Link
+                    Link
                   </th>
                 </tr>
               </thead>
               <tbody>
+                <tr>
+                  <th>
+                    Website Kebudayaan Kementrian Pendidikan dan Kebudayaan
+                  </th>
+                  <td>
+                    Laravel(Backend)
+                  </td>
+                  <td>
+                   (development stage)
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    Bank Sampah
+                  </th>
+                  <td>
+                    Tailwind, Alpine, Laravel
+                  </td>
+                  <td>
+                    <a href="https://banksampah.digitalpiranti.com"
+                      >https://banksampah.digitalpiranti.com</a
+                    >
+                  </td>
+                </tr>
                 <tr>
                   <th>
                     Buy And Sell websites
@@ -159,6 +258,19 @@
                     >
                   </td>
                 </tr>
+                 <tr>
+                  <th>
+                    Penjualan Ikan
+                  </th>
+                  <td>
+                    Bootstrap, Laravel
+                  </td>
+                  <td>
+                    <a href="https://github.com/khoiruddoa/penjualan_ikan.git"
+                      >https://github.com/khoiruddoa/penjualan_ikan.git</a
+                    >
+                  </td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -194,7 +306,6 @@
            </div>
            <br>
            <br>
-           I deliberately made this website with pure html because I want to remember the first time I got to know coding. and it's fun
            </div>
     </section>
   </body>
